@@ -1,0 +1,19 @@
+
+  -- Most Popular Three Articles --
+
+ "Candidate Is Jerk" — 338647 views
+ "Bears Love Berries" — 253801 views
+ "Bad Things Gone" — 170098 views
+
+
+  -- Most Popular Authors --
+
+ "Ursula La Multa" — 507594 views
+ "Rudolf Von Treppenwitz" — 423457 views
+ "Anonymous Contributor" — 170098 views
+ "Markoff Chaney" — 84557 views
+
+
+  -- Days Have More Then 1% Errors in Requests --
+
+ July 17,2016 — 2.3% errors
