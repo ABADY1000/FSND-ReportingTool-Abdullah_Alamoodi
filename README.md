@@ -65,7 +65,7 @@ You should see results like this
 
 ```
 
-### Code Styling
+## Code Styling
 
 Pyhton code is wrtitten according to [pep8](https://www.python.org/dev/peps/pep-0008/)
 
