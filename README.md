@@ -16,8 +16,9 @@
   You will need the following:
   * Virtual Machine softwere.
   * Vgrant with Ubuntu installed.
-You can download VM from [here](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1)  
-And you cand download Vagrant [here](https://www.vagrantup.com/downloads.html)
+  
+  You can download VM from [here](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1)  
+  And you cand download Vagrant [here](https://www.vagrantup.com/downloads.html)
 
   Inside your new environment *Ubuntu* you will need:
   * Python 3.6.
@@ -36,7 +37,7 @@ $ vagrant ssh
 ```
 Switch the path to the files you have just added and run it using Python 3.7
 ```
-Python3 [your file name]
+$ Python3 [your file name]
 ```
 
 
