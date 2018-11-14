@@ -64,9 +64,6 @@ You should see results like this
 
 ```
 
-
-
-
 ### Code Styling
 
 Pyhton code is wrtitten according to [pep8](https://www.python.org/dev/peps/pep-0008/)
@@ -81,7 +78,7 @@ and there should be no output
 
 ## Author
 
-* **Abdiullah Alamoodi** - [Github](https://github.com/abady1000)
+* **Abdullah Alamoodi** - [Github](https://github.com/abady1000)
 
 ## License
 
@@ -89,4 +86,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Mashael ElSaeed - Course instructor
+* **Mashael ElSaeed** - Course instructor
