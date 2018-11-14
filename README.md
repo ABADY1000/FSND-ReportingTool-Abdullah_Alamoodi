@@ -1,37 +1,44 @@
 # FSND Repoting Tool (Project1)
 
-A tool used to analyse server database and provide informatio about:
-- Best writers
-- Best articles
-- Errors occurance
+  A tool used to analyse server database and provide informatio about:
+  - Best writers
+  - Best articles
+  - Errors occurance
 
 ## Getting Started
 
-This tool is used to analyse database, so it is require a data base first to work on.
+  This tool is used to analyse database, so it is require a data base first to work on.
 
-this tool works only on FSND "news" database.
+  this tool works only on FSND "news" database.
 
 ### Prerequisites
 
-You will need VM and you will also need Vgrant with Ubuntu installed.
+  You will need VM and you will also need Vgrant with Ubuntu installed.
 
-inside your new environment you need Python 3.6 and PostgreSQL to be installed.
+  Inside your new environment you need Python 3.6 and PostgreSQL to be installed.
 
-you can download VM from [here](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1)
-
-```
-Give examples
-```
-
+  You can download VM from [here](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1)
+  
+  And you cand download Vagrant [here](https://www.vagrantup.com/downloads.html)
+  
+  
 ### Installing
 
-A step by step series of examples that tell you how to get a development env running
-
-Say what the step will be
-
+  After downloading this project add it tou your Vagrant files, run Vagrant 
 ```
-Give the example
+$ vagrant up
 ```
+  and then
+```
+$ vagrant ssh
+```
+  Switch the path to the files you have just added and run it using Python 3.7
+```
+Python3 [your file name]
+```
+~~~
+gggpwf[wpoeaf
+~~~
 
 And repeat
 
