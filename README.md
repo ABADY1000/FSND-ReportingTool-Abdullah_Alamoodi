@@ -75,7 +75,63 @@ To run the test use
 ~~~
 $ pycodestyle [your file name]
 ~~~
-and there should be no output
+and there should be no output if your code is well styled.
+
+## Used Views
+
+Views is important in SQL Queries, in order to make the SQL query more readable.
+
+Four Views are used in this project:
+
+1. **seen**
+
+This view is used in second query, it it shows articles slug and the number of time an artice is requested.
+
+```
+CREATE VIEW seen AS
+SELECT substring(path from 10) as title,count(*) as counter
+FROM log 
+WHERE path != '/'
+GROUP BY path
+;
+```
+
+2. **errors**
+
+This view is used in the fourth view, it shows how many fail request were there in each day.
+
+```
+CREATE VIEW errors AS
+SELECT time::date AS Day, count(*)
+FROM log
+WHERE status LIKE '%404%'
+GROUP BY Day
+;
+```
+
+3. **allRequests**
+
+This view is used in the forth view, it shows haw many requests were there in each day in total (whether it succeeded or not).
+
+```
+CREATE VIEW allRequests AS
+SELECT time::date AS Day, count(*)
+FROM log
+GROUP BY Day
+;
+```
+
+4. **results**
+
+This view is used in the third query, it shows every day and the percentage of error in that day.
+
+```
+CREATE VIEW results AS
+SELECT errors.day,(CAST(errors.count AS REAL)/allRequests.count) * 100 AS er
+FROM errors JOIN allRequests
+ON errors.day = allRequests.day
+;
+```
 
 ## Author
 
