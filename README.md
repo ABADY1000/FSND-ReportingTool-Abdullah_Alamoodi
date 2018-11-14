@@ -13,13 +13,15 @@
 
 ### Prerequisites
 
-  You will need VM and you will also need Vgrant with Ubuntu installed.
+  You will need the following:
+  * Virtual Machine softwere.
+  * Vgrant with Ubuntu installed.
+You can download VM from [here](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1)  
+And you cand download Vagrant [here](https://www.vagrantup.com/downloads.html)
 
-  Inside your new environment you need Python 3.6 and PostgreSQL to be installed.
-
-  You can download VM from [here](https://www.virtualbox.org/wiki/Download_Old_Builds_5_1)
-  
-  And you cand download Vagrant [here](https://www.vagrantup.com/downloads.html)
+  Inside your new environment *Ubuntu* you will need:
+  * Python 3.6.
+  * PostgreSQL.
   
   
 ### Installing
@@ -32,65 +34,54 @@ $ vagrant up
 ```
 $ vagrant ssh
 ```
-  Switch the path to the files you have just added and run it using Python 3.7
+Switch the path to the files you have just added and run it using Python 3.7
 ```
 Python3 [your file name]
 ```
+
+
+You should see results like this
+```
+
+  -- Most Popular Three Articles --
+
+ "Candidate Is Jerk" — 338647 views
+ "Bears Love Berries" — 253801 views
+ "Bad Things Gone" — 170098 views
+
+
+  -- Most Popular Authors --
+
+ "Ursula La Multa" — 507594 views
+ "Rudolf Von Treppenwitz" — 423457 views
+ "Anonymous Contributor" — 170098 views
+ "Markoff Chaney" — 84557 views
+
+
+  -- Days Have More Then 1% Errors in Requests --
+
+ July 17,2016 — 2.3% errors
+
+```
+
+
+
+
+### Code Styling
+
+Pyhton code is wrtitten according to [pep8](https://www.python.org/dev/peps/pep-0008/)
+
+and the code is tested to be applicable for this styling method using the library [pycodestyle](https://pycodestyle.readthedocs.io/en/latest/)
+
+To run the test use
 ~~~
-gggpwf[wpoeaf
+$ pycodestyle [your file name]
 ~~~
+and there should be no output
 
-And repeat
+## Author
 
-```
-until finished
-```
-
-End with an example of getting some data out of the system or using it for a little demo
-
-## Running the tests
-
-Explain how to run the automated tests for this system
-
-### Break down into end to end tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-### And coding style tests
-
-Explain what these tests test and why
-
-```
-Give an example
-```
-
-## Deployment
-
-Add additional notes about how to deploy this on a live system
-
-## Built With
-
-* [Dropwizard](http://www.dropwizard.io/1.0.2/docs/) - The web framework used
-* [Maven](https://maven.apache.org/) - Dependency Management
-* [ROME](https://rometools.github.io/rome/) - Used to generate RSS Feeds
-
-## Contributing
-
-Please read [CONTRIBUTING.md](https://gist.github.com/PurpleBooth/b24679402957c63ec426) for details on our code of conduct, and the process for submitting pull requests to us.
-
-## Versioning
-
-We use [SemVer](http://semver.org/) for versioning. For the versions available, see the [tags on this repository](https://github.com/your/project/tags). 
-
-## Authors
-
-* **Billie Thompson** - *Initial work* - [PurpleBooth](https://github.com/PurpleBooth)
-
-See also the list of [contributors](https://github.com/your/project/contributors) who participated in this project.
+* **Abdiullah Alamoodi** - [Github](https://github.com/abady1000)
 
 ## License
 
@@ -98,7 +89,4 @@ This project is licensed under the MIT License - see the [LICENSE.md](LICENSE.md
 
 ## Acknowledgments
 
-* Hat tip to anyone whose code was used
-* Inspiration
-* etc
-
+* Mashael ElSaeed - Course instructor
